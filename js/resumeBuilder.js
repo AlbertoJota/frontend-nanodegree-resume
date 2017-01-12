@@ -1,57 +1,86 @@
-var skills = ["awesomeness", "programming", "gamming"];
-//$("#main").append(skills[0]);
+var work = {
+    "jobs": [
+    {
+        "employer": "Sadia SA",
+        "title": "Production supervisor",
+        "location": "Brasília, DF, BR",
+        "dates": "2005",
+        "description": "Supervise officials in the slaughter of chickens in the company's fridge."
+    },
+    {
+        "employer": "Caixa Econômica Federal",
+        "title": "Banking technician",
+        "location": "Brasília, DF, BR",
+        "dates": "2005 - 2008",
+        "description": "Day-to-day work of a bank branch. I held a management position. Later I worked in the company's headquarters, where I held the position of analsita junior."
+    },{
+        "employer": "Autonomous",
+        "title": "Veterinarian",
+        "location": "Alexânia, GO, BR",
+        "dates": "2010 - 2011 ",
+        "description": "Clinica animal no dia a dia da criação de cães."
+    },
+    {
+        "employer": "Ministry of Finance",
+        "title": "Administrative Assistant",
+        "location": "Brasília, DF, BR",
+        "dates": "2012 - Future",
+        "description": "Software development in the school of business administration. Currently working on the payroll at the Federal Revenue Service."
+    }
+    ]
+};
+
+var projects = {
+    "projects": [
+    {
+        "title": "Portfolio",
+        "dates": "2017",
+        "description": "Development of a portfolio as part of the udacity nanodegree front end web developer training",
+        "images": ["images/fry.jpg"]
+    }
+    ]
+};
 
 var bio = {
-    "name" : "Alberto JOTA",
-    "role" : "Front End Web Developer",
-    "contacts" : {
-        "contactGeneric": "+55 61 38794449",
+    "name": "Alberto JOTA",
+    "role": "Front End Web Developer",
+    "welcomeMsg": "Happy of the one who transfers what he knows and learns what he teaches - Cora Coralina",
+    "contacts": {
         "mobile": "+55 61 994063232",
         "email": "albertojota@hotmail.com",
-        "twitter" : "@BetoJota",
-        "gitHub" : "AlbertoJota",
-        "location" : "Brasília - DF - Brazil"
-},
-    "bioPic" : "images/fry.jpg",
-    "welcomeMsg" : "Welcome to the web development world!",
-    "skills" : skills
+        "github": "AlbertoJota",
+        "twitter": "BetoJota",
+        "location": "Brasília, DF, BR"
+    },
+    "skills": ["Good apprentice", "Persevering", "Communicative", "Fun"]
 };
-var formattedName = HTMLheaderName.replace("%data%", bio.name);
-var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-var formattedContactGeneric = HTMLcontactGeneric.replace("%data%", bio.contacts.contactGeneric);
-var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
-var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
-var formattedGitHub = HTMLgithub.replace("%data%", bio.contacts.twitter);
-var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
-var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
-var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMsg);
 
-$("#header").prepend(formattedRole);
-$("#header").prepend(formattedName);
-$("#topContacts").append(formattedMobile);
-$("#topContacts").append(formattedEmail);
-$("#topContacts").append(formattedTwitter);
-$("#topContacts").append(formattedGitHub);
-$("#topContacts").append(formattedLocation);
-$("#topContacts").prepend(formattedBioPic);
+var education = {
+    "schools": [
+        {
+            "name": "Universidade Federal de Goiás",
+            "location": "Goiânia, GO, BR",
+            "degree": "Bacharel",
+            "majors": ["Medicine Veterinary"],
+            "dates": 2004,
+            "url": "https://evz.ufg.br/"
+        },
+        {
+            "name": "Centro Universitário de Brasília",
+            "location": "Brasília, DF, BR",
+            "degree": "Technologist",
+            "majors": ["Analysis and systems development"],
+            "dates": 2017,
+            "url": "https://www.uniceub.br/"
+        }
+    ],
+    "onlineCourses": [
+        {
+            "title": "Nanodegree Front End Web Developer",
+            "school": "Udacity",
+            "dates": 2017,
+            "url": "https://www.udacity.com"
+        }
 
-var work = {};
-work.position = "Administrative Assistant";
-work.employer = "Ministry of Finance";
-work.years = 3;
-
-var education = {};
-    education["name"] = "Centro Educacional La Salle";
-    education["years"] = "1997-1999";
-    education["city"] =  "Brasília, DF, BR";
-
-
-var formattedWorkPosition = HTMLworkTitle.replace("%data%", work.position);
-var formattedWorkEmployer = HTMLworkEmployer.replace("%data%", work.employer);
-var formattedWorkYears = HTMLworkDates.replace("%data%", work.years);
-
-
-$("#workExperience").append(formattedWorkEmployer);
-$("#workExperience").append(formattedWorkPosition);
-$("#workExperience").prepend(HTMLworkStart);
+    ]
+}
