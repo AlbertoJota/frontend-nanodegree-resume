@@ -18,10 +18,10 @@ var work = {
         "title": "Veterinarian",
         "location": "Alexânia, GO, BR",
         "dates": "2010 - 2011 ",
-        "description": "Clinica animal no dia a dia da criação de cães."
+        "description": "Animal clinic in day to day breeding of dogs."
     },
     {
-        "employer": "Ministry of Finance",
+        "employer": "Ministry of Finances",
         "title": "Administrative Assistant",
         "location": "Brasília, DF, BR",
         "dates": "2012 - Future",
@@ -42,7 +42,7 @@ var projects = {
 };
 
 var bio = {
-    "name": "Alberto JOTA",
+    "name": "Alberto Jota",
     "role": "Front End Web Developer",
     "welcomeMsg": "Happy of the one who transfers what he knows and learns what he teaches - Cora Coralina",
     "contacts": {
@@ -84,3 +84,5 @@ var education = {
 
     ]
 }
+
+$("#mapDiv").append(googleMap);
